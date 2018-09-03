@@ -37,8 +37,14 @@ void AFPSCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-    //PlayerInputComponent->BindAxis("MoveForward", this, &AFPSCharacter::MoveForward);
+    PlayerInputComponent->BindAxis("MoveForward", this, &AFPSCharacter::MoveForward);
     //PlayerInputComponent->BindAxis("MoveRight", this, &AFPSCharacter::MoveRight);
 
 }
+
+void AFPSCharacter::MoveForward(float Value)
+{
+    //furgle
+}
+
 

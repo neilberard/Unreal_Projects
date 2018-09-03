@@ -2,9 +2,10 @@
 
 #pragma once
 
+
 #include "GameFramework/Character.h"
-#include "FPSCharacter.generated.h"
 #include "CoreMinimal.h"
+#include "FPSCharacter.generated.h"
 
 
 UCLASS()
@@ -27,8 +28,8 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-    //UFUNCTION()
-    //void MoveForward(float Value);
+    UFUNCTION()
+        void MoveForward(float Value);
 
     //UFUNCTION()
     //void MoveRight(float Value);
