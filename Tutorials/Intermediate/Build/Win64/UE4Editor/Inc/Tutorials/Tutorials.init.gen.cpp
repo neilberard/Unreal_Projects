@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeTutorials_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/Tutorials",
 				PKG_CompiledIn | 0x00000000,
-				0xD4B97A9E,
-				0xBB5968C0,
+				0xC5F48506,
+				0x3CD689C5,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};

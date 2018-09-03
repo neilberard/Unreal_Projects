@@ -13,48 +13,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TUTORIALS_FPSCharacter_generated_h
 
-#define Tutorials_Source_Tutorials_FPSCharacter_h_12_RPC_WRAPPERS \
- \
-	DECLARE_FUNCTION(execMoveRight) \
-	{ \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->MoveRight(Z_Param_Value); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execMoveForward) \
-	{ \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->MoveForward(Z_Param_Value); \
-		P_NATIVE_END; \
-	}
-
-
-#define Tutorials_Source_Tutorials_FPSCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
- \
-	DECLARE_FUNCTION(execMoveRight) \
-	{ \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->MoveRight(Z_Param_Value); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execMoveForward) \
-	{ \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->MoveForward(Z_Param_Value); \
-		P_NATIVE_END; \
-	}
-
-
+#define Tutorials_Source_Tutorials_FPSCharacter_h_12_RPC_WRAPPERS
+#define Tutorials_Source_Tutorials_FPSCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
 #define Tutorials_Source_Tutorials_FPSCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFPSCharacter(); \

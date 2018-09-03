@@ -1,14 +1,26 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Compiling game modules for hot reload
-  Building 1 action with 8 processes...
-    [1/1] UE4Editor-Tutorials-8835.dll
-       Creating library E:\Unreal_Projects\Tutorials\Intermediate\Build\Win64\UE4Editor\Development\Tutorials\UE4Editor-Tutorials-8835.suppressed.lib and object E:\Unreal_Projects\Tutorials\Intermediate\Build\Win64\UE4Editor\Development\Tutorials\UE4Editor-Tutorials-8835.suppressed.exp
-FPSCharacter.cpp.obj : error LNK2019: unresolved external symbol "public: void __cdecl AFPSCharacter::MoveForward(float)" (?MoveForward@AFPSCharacter@@QEAAXM@Z) referenced in function "public: static void __cdecl AFPSCharacter::execMoveForward(class UObject *,struct FFrame &,void * const)" (?execMoveForward@AFPSCharacter@@SAXPEAVUObject@@AEAUFFrame@@QEAX@Z)
-FPSCharacter.gen.cpp.obj : error LNK2001: unresolved external symbol "public: void __cdecl AFPSCharacter::MoveForward(float)" (?MoveForward@AFPSCharacter@@QEAAXM@Z)
-FPSCharacter.cpp.obj : error LNK2019: unresolved external symbol "public: void __cdecl AFPSCharacter::MoveRight(float)" (?MoveRight@AFPSCharacter@@QEAAXM@Z) referenced in function "public: static void __cdecl AFPSCharacter::execMoveRight(class UObject *,struct FFrame &,void * const)" (?execMoveRight@AFPSCharacter@@SAXPEAVUObject@@AEAUFFrame@@QEAX@Z)
-FPSCharacter.gen.cpp.obj : error LNK2001: unresolved external symbol "public: void __cdecl AFPSCharacter::MoveRight(float)" (?MoveRight@AFPSCharacter@@QEAAXM@Z)
-E:\Unreal_Projects\Tutorials\Binaries\Win64\UE4Editor-Tutorials-8835.dll : fatal error LNK1120: 2 unresolved externals
-UnrealBuildTool : error : UBT ERROR: Failed to produce item: E:\Unreal_Projects\Tutorials\Binaries\Win64\UE4Editor-Tutorials-8835.dll
-                          (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
-  Total build time: 1.61 seconds (Parallel executor: 0.00 seconds)
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3075: The command ""E:\ProgramFiles\UE4\Epic Games\UE_4.20\Engine\Build\BatchFiles\Build.bat" TutorialsEditor Win64 Development "E:\Unreal_Projects\Tutorials\Tutorials.uproject" -WaitMutex -FromMsBuild" exited with code 5. Please verify that you have sufficient rights to run this command.
+﻿  Cleaning TutorialsEditor Binaries...
+  Using 'git status' to determine working set for adaptive non-unity build.
+  Using 'git status' to determine working set for adaptive non-unity build.
+  Creating makefile for TutorialsEditor (no existing makefile)
+  Performing full C++ include scan (no include cache file)
+  Using Visual Studio 2017 14.15.26726 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726) and Windows 10.0.17134.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Parsing headers for TutorialsEditor
+    Running UnrealHeaderTool "E:\Unreal_Projects\Tutorials\Tutorials.uproject" "E:\Unreal_Projects\Tutorials\Intermediate\Build\Win64\TutorialsEditor\Development\TutorialsEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for TutorialsEditor in 8.3199224 seconds
+  Building 12 actions with 8 processes...
+    [1/12] PCLaunch.rc
+    [2/12] SharedPCH.Engine.cpp
+    [3/12] Tutorials.cpp
+    [4/12] CameraDirector.gen.cpp
+    [5/12] Tutorials.init.gen.cpp
+    [6/12] TutorialsGameModeBase.cpp
+    [7/12] FPSCharacter.cpp
+    [8/12] TutorialsGameModeBase.gen.cpp
+    [9/12] FPSCharacter.gen.cpp
+    [10/12] CameraDirector.cpp
+    [11/12] UE4Editor-Tutorials.lib
+       Creating library E:\Unreal_Projects\Tutorials\Intermediate\Build\Win64\UE4Editor\Development\Tutorials\UE4Editor-Tutorials.lib and object E:\Unreal_Projects\Tutorials\Intermediate\Build\Win64\UE4Editor\Development\Tutorials\UE4Editor-Tutorials.exp
+    [12/12] UE4Editor-Tutorials.dll
+       Creating library E:\Unreal_Projects\Tutorials\Intermediate\Build\Win64\UE4Editor\Development\Tutorials\UE4Editor-Tutorials.suppressed.lib and object E:\Unreal_Projects\Tutorials\Intermediate\Build\Win64\UE4Editor\Development\Tutorials\UE4Editor-Tutorials.suppressed.exp
+  Deploying TutorialsEditor Win64 Development...
+  Total build time: 41.90 seconds (Parallel executor: 27.53 seconds)
