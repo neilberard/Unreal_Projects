@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "FPSCharacter.h"
-//#include "Components/InputComponent.h"
-//#include "Runtime/Engine/Classes/Engine/Engine.h"
+#include "Components/InputComponent.h"
+#include "Runtime/Engine/Classes/Engine/Engine.h"
 
 
 
@@ -38,13 +38,22 @@ void AFPSCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
     PlayerInputComponent->BindAxis("MoveForward", this, &AFPSCharacter::MoveForward);
-    //PlayerInputComponent->BindAxis("MoveRight", this, &AFPSCharacter::MoveRight);
+    PlayerInputComponent->BindAxis("MoveRight", this, &AFPSCharacter::MoveRight);
 
 }
 
 void AFPSCharacter::MoveForward(float Value)
 {
-    //furgle
+    FVector Direction = FRotationMatrix(Controller->GetControlRotation()).GetScaledAxis(EAxis::X); 
+    AddMovementInput(Direction, Value);
+    //gurgle
+}
+
+void AFPSCharacter::MoveRight(float Value)
+{
+    FVector Direction = FRotationMatrix(Controller->GetControlRotation()).GetScaledAxis(EAxis::Y);
+    AddMovementInput(Direction, Value);
+    //burgle
 }
 
 

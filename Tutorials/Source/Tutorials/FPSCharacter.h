@@ -31,8 +31,8 @@ public:
     UFUNCTION()
         void MoveForward(float Value);
 
-    //UFUNCTION()
-    //void MoveRight(float Value);
+    UFUNCTION()
+    void MoveRight(float Value);
 
 	
 };
