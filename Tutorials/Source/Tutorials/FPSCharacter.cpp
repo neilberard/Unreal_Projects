@@ -3,6 +3,7 @@
 #include "FPSCharacter.h"
 #include "Components/InputComponent.h"
 #include "Runtime/Engine/Classes/Engine/Engine.h"
+#include "GameFramework/PlayerController.h"
 
 
 
@@ -37,8 +38,14 @@ void AFPSCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+    //Setup Movement Bindings
     PlayerInputComponent->BindAxis("MoveForward", this, &AFPSCharacter::MoveForward);
     PlayerInputComponent->BindAxis("MoveRight", this, &AFPSCharacter::MoveRight);
+
+
+    //Setup "Look" Bindings
+    PlayerInputComponent->BindAxis("Turn", this, &AFPSCharacter::AddControllerYawInput);
+    PlayerInputComponent->BindAxis("LookUp", this, &AFPSCharacter::AddControllerPitchInput);
 
 }
 
@@ -46,14 +53,14 @@ void AFPSCharacter::MoveForward(float Value)
 {
     FVector Direction = FRotationMatrix(Controller->GetControlRotation()).GetScaledAxis(EAxis::X); 
     AddMovementInput(Direction, Value);
-    //gurgle
+
 }
 
 void AFPSCharacter::MoveRight(float Value)
 {
     FVector Direction = FRotationMatrix(Controller->GetControlRotation()).GetScaledAxis(EAxis::Y);
     AddMovementInput(Direction, Value);
-    //burgle
+
 }
 
 
