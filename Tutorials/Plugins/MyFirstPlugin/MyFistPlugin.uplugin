@@ -1,0 +1,25 @@
+{
+	"FileVersion" : 3,
+	"Version" : 14,
+	"VersionName" : "1.4",
+	"FriendlyName" : "MyFirstPlugin",
+	"Description" : "Testing this out",
+	"Category" : "Source Control",
+	"CreatedBy" : "NB",
+	"CreatedByURL" : "www.bitsnbrushes.com",
+	"DocsURL" : "",
+	"MarketplaceURL" : "",
+	"SupportURL" : "",
+	"EnabledByDefault" : true,
+	"CanContainContent" : false,
+	"IsBetaVersion" : true,
+	"Installed" : false,
+	"Modules" :
+	[
+		{
+			"Name" : "MyFirstPlugin",
+			"Type" : "Editor",
+			"LoadingPhase" : "Default"
+		}
+	]
+}

@@ -5,6 +5,7 @@
 
 #include "GameFramework/Character.h"
 #include "CoreMinimal.h"
+#include "Camera/CameraComponent.h"
 #include "FPSCharacter.generated.h"
 
 
@@ -33,6 +34,15 @@ public:
 
     UFUNCTION()
     void MoveRight(float Value);
+
+    UFUNCTION()
+    void StartJump();
+
+    UFUNCTION()
+    void EndJump();
+
+    UPROPERTY(VisibleAnywhere)
+    UCameraComponent* FPSCameraComponent;
 
 	
 };
